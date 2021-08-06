@@ -16,7 +16,7 @@
 - type : ADD
 - apiKey : apikey
 - name : 상품명
-- productId : 쇼핑몰에서 관리하는 id
+- productId : 쇼핑몰에서 관리하는 유니크 id (쇼핑몰에서 노출되는 것, ex : SM323UTS70)
 - category1: 대 카테고리
 - category2: 중 카테고리
 - category3: 소 카테고리
@@ -57,7 +57,7 @@
 - type : CHANGE
 - apiKey : apikey
 - name : 상품명
-- productId : 쇼핑몰에서 관리하는 id
+- productId : 쇼핑몰에서 관리하는 유니크 id (쇼핑몰에서 노출되는 것, ex : SM323UTS70)
 - category1: 대 카테고리
 - category2: 중 카테고리
 - category3: 소 카테고리
