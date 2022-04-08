@@ -94,18 +94,4 @@
 }
 ```
 
-### 4.3 재고 변경
-- type : CHANGE_STOCK
-- apiKey : apikey
 
-#### 예제
-```
-{
-  "type": "CHANGE_STOCK",
-  "apiKey": "asfdasdfsf234klj23kl4jldfu90fsdf",
-  "item": {
-    "productId": "a909203923",
-    "stock": 123
-  }
-}
-```
