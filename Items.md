@@ -17,17 +17,19 @@
 - apiKey : apikey
 - name : 상품명
 - productId : 쇼핑몰에서 관리하는 유니크 id (쇼핑몰에서 노출되는 것, ex : SM323UTS70)
-- category1: 대 카테고리
-- category2: 중 카테고리
-- category3: 소 카테고리
+- category2: 중 카테고리 (대 카테고리는 대시보드의 카테고리 매핑에 맞춰서 생성)
 - desc : 상품 설명
 - gender : NONE, MALE, FEMALE, UNISEX
 - brand : 브랜드
 - price : 판매 가격(Integer)
 - originalPrice : 원가(Integer)
 - imageUrl : 상품 이미지 주소
+- removeBackground : true, false (상품이미지 배경제거 여부)
 - origin : 원산지
 - detailUrl : 상품 상세 페이지
+- season : [SPRING, SUMMER, AUTUMN, WINTER]
+- age : ADULT, JUNIOR, CHILD
+
 
 #### 예제
 ```
