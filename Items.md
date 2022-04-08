@@ -14,6 +14,7 @@
 ### 4.1 상품 추가
 - type : ADD
 - apiKey : apikey
+- removeBackground : true, false (상품이미지 배경제거 여부)
 - name : 상품명
 - productId : 쇼핑몰에서 관리하는 유니크 id (쇼핑몰에서 노출되는 것, ex : SM323UTS70)
 - category2: 중 카테고리 (대 카테고리는 대시보드의 카테고리 매핑에 맞춰서 생성)
@@ -24,9 +25,9 @@
 - originalPrice : 원가(Integer)
 - imageUrl : 상품 이미지 주소
 - subImageUrl : 상품 서브 이미지 주소 (생략가능)
-- removeBackground : true, false (상품이미지 배경제거 여부)
 - origin : 원산지
 - detailUrl : 상품 상세 페이지
+- stock: 재고
 - season : [SPRING, SUMMER, AUTUMN, WINTER] (복수선택 가능)
 - age : ADULT, JUNIOR, CHILD
 
@@ -60,6 +61,7 @@
 ### 4.2 상품 수정
 - type : CHANGE
 - apiKey : apikey
+- removeBackground : true, false (상품이미지 배경제거 여부)
 - name : 상품명
 - productId : 쇼핑몰에서 관리하는 유니크 id (쇼핑몰에서 노출되는 것, ex : SM323UTS70)
 - category2: 중 카테고리 (대 카테고리는 대시보드의 카테고리 매핑에 맞춰서 생성)
@@ -70,10 +72,9 @@
 - originalPrice : 원가(Integer)
 - imageUrl : 상품 이미지 주소
 - subImageUrl : 상품 서브 이미지 주소 (생략가능)
-- removeBackground : true, false (상품이미지 배경제거 여부)
 - origin : 원산지
 - detailUrl : 상품 상세 페이지
-- 
+- stock: 재고
 - season : [SPRING, SUMMER, AUTUMN, WINTER] (복수선택 가능)
 - age : ADULT, JUNIOR, CHILD
 
