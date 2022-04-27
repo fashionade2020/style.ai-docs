@@ -19,7 +19,7 @@
 - productId : 쇼핑몰에서 관리하는 유니크 id (쇼핑몰에서 노출되는 것, ex : SM323UTS70)
 - category2: 중 카테고리 (대 카테고리는 대시보드의 카테고리 매핑에 맞춰서 생성)
 - desc : 상품 설명
-- gender : NONE, MALE, FEMALE, UNISEX
+- gender : MALE, FEMALE, UNISEX
 - brand : 브랜드
 - price : 판매 가격(Integer)
 - originalPrice : 원가(Integer)
@@ -66,7 +66,7 @@
 - productId : 쇼핑몰에서 관리하는 유니크 id (쇼핑몰에서 노출되는 것, ex : SM323UTS70)
 - category2: 중 카테고리 (대 카테고리는 대시보드의 카테고리 매핑에 맞춰서 생성)
 - desc : 상품 설명
-- gender : NONE, MALE, FEMALE, UNISEX
+- gender : MALE, FEMALE, UNISEX
 - brand : 브랜드
 - price : 판매 가격(Integer)
 - originalPrice : 원가(Integer)
@@ -77,6 +77,7 @@
 - stock: 재고
 - season : [SPRING, SUMMER, AUTUMN, WINTER] (복수선택 가능)
 - age : ADULT, JUNIOR, CHILD
+- sellingStatus : NOT_DISPLAY, SOLD_OUT, VALID (전시종료, 판매종료, 유효함)
 
 #### 예제
 ```
@@ -99,7 +100,8 @@
     "detailUrl": "https://dfsf.com/a909203923",
     "stock": 10,
     "season": ["WINTER"],
-    "age": "ADULT"
+    "age": "ADULT",
+    "sellingStatus" : "VALID"
   }
 }
 ```
