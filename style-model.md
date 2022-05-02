@@ -15,7 +15,7 @@
   </tr>
   <tr>
     <td>API Endpoint</td>
-    <td>http://15.165.230.228:3211/api/styleai/tryon</td>
+    <td>http://15.165.230.228:3211/api/tryon</td>
     <td></td>
   </tr>
   <tr>
