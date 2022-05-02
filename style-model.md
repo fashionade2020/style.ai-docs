@@ -70,7 +70,7 @@
   <tr>
     <td>Message</td>
     <td>Status가 Failure인 경우 상세 에러 메세지</td>
-    <td></td>
+    <td>ex) Invalid image url, please ensure the file is of correct size and format</td>
   </tr>
   <tr>
     <td>Data</td>
