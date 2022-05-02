@@ -2,6 +2,24 @@
 
 
 ### Request Format
+<table>
+  <tr>
+    <th>항목</th>
+    <th>설명</th>
+    <th>세부내용</th>
+  </tr>
+  <tr>
+    <td>Method</td>
+    <td>POST</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>API Endpoint</td>
+    <td>http://15.165.230.228:3211/api/styleai/tryon</td>
+    <td></td>
+  </tr>
+</table>
+
 |항목|설명|세부내용|
 |------|---|---|
 |Method|POST||
@@ -23,3 +41,11 @@
   "userId": "userId" // 유저아이디
 }
 ```
+
+
+### Response Format
+|항목|설명|세부내용|
+|------|---|---|
+|Status|API 요청 성공여부||
+|Message|||
+|Data|styleInfo||
