@@ -18,13 +18,13 @@
     <td>http://15.165.230.228:3211/api/styleai/tryon</td>
     <td></td>
   </tr>
+  <tr>
+    <td>Request Body</td>
+    <td>styleInfo</td>
+    <td></td>
+  </tr>
 </table>
 
-|항목|설명|세부내용|
-|------|---|---|
-|Method|POST||
-|API Endpoint|http://15.165.230.228:3211/api/styleai/tryon||
-|Request Body|styleInfo||
 
 
 
