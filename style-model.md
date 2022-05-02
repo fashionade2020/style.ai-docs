@@ -19,26 +19,33 @@
     <td></td>
   </tr>
   <tr>
-    <td>Request Body</td>
+    <td rowspan="3">Request Body</td>
     <td>styleInfo</td>
     <td></td>
   </tr>
 </table>
 
 
-
-
-
 ```
-"type": "click", // 로그 타입 (click, addCart, purchase)
-"apiKey": "XXXXXXX", // 이전에 전달드린 데상트 apiKey
-"uuid": "/^[a-zA-Z0-9]+$/", // 랜덤 생성 unique id
-"userAgent": "Mozilla", // user agent
-"lang": "ko-Kr", // 브라우저 언어
-"page": "https://www.sample.com/page.html", 페이지 url"referrer": "https://www.sample.com/refer", 링크를 통해 현재 페이지로 이동 시킨, 전 페이지의 URI 정보
-"deviceTime": "2020-09-09 12:00:00.000" // GMT+9
-"ext": {
-  "userId": "userId" // 유저아이디
+{
+    "styleInfo": {
+        "tops": {
+            "gender": "female",
+            "image_url" :"https://s3.ap-northeast-2.amazonaws.com/style.ai/devimages/164176935366889473/161936239803782208.png",
+            "category" : "tops"
+        },
+        "outerwear": {
+            "gender" : "female",
+            "image_url" : "https://s3.ap-northeast-2.amazonaws.com/style.ai/devimages/164176935366889473/161936239856623808.png",
+            "category" : "outerwear"
+        },
+        "bottoms": {
+            "gender" : "female",
+            "image_url" : "https://s3.ap-northeast-2.amazonaws.com/style.ai/devimages/164176935366889473/161869500333571547.png",
+            "category" : "bottoms",
+            "bottoms_sub_category": "pants"
+        }
+    }
 }
 ```
 
