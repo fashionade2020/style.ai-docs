@@ -34,7 +34,7 @@
     "mobile": "010-1234-5678",
   }
 }
-
+```
 
 ### 4.2 주문 상품 정보 연동
 - type : ORDER_ITEM
@@ -51,3 +51,4 @@
   "userId" : "user1",
   "productId" : "PHD0401"
 }
+```
