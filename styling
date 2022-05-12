@@ -37,7 +37,7 @@
 
 
 ### 4.2 주문 상품 정보 연동
-- type : ORDER
+- type : ORDER_ITEM
 - apiKey : apikey
 - userId : 유저아이디
 - productId: 상품의 아이디 혹은 일련번호
