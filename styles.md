@@ -41,6 +41,7 @@
 - apiKey : apikey
 - userId : 유저아이디
 - productId: 상품의 아이디 혹은 일련번호
+- created : 주문날짜
 
 
 #### 예제
@@ -49,6 +50,7 @@
   "type": "ORDER_ITEM",
   "apiKey": "asfdasdfsf234klj23kl4jldfu90fsdf",
   "userId" : "user1",
-  "productId" : "PHD0401"
+  "productId" : "PHD0401",
+  "created" : "2022-05-01"
 }
 ```
