@@ -123,40 +123,40 @@ import com.amazonaws.services.sqs.model.SendMessageRequest;
 #### 코드
 ```
 AmazonSQS sqsClient = AmazonSQSClientBuilder.standard()
-                    .withRegion(Regions.fromName("ap-northeast-2"))
-                    .withCredentials(new AWSStaticCredentialsProvider(
-                            new BasicAWSCredentials("zxdtwqdgrtedfbbhqgsaw", "ojvoexalkcjeilsdmf")))
-                    .build();
+        .withRegion(Regions.fromName("ap-northeast-2"))
+        .withCredentials(new AWSStaticCredentialsProvider(
+                new BasicAWSCredentials("zxdtwqdgrtedfbbhqgsaw", "ojvoexalkcjeilsdmf")))
+        .build();
 
-            String queueUrl = "https://sqs.ap-northeast-2.amazonaws.com/978986354907/item_test_20220408";
-            String messageBody = "{\n"
-                    + "  \"type\": \"ADD\",\n"
-                    + "  \"apiKey\": \"\",\n"
-                    + "  \"removeBackground\": false,\n"
-                    + "  \"item\": {\n"
-                    + "    \"name\": \"레더 벨트\",\n"
-                    + "    \"productId\": \"PRODUCTID_1\",\n"
-                    + "    \"category2\": \"BELT\",\n"
-                    + "    \"gender\": \"MALE\",\n"
-                    + "    \"brand\": \"BRAND\",\n"
-                    + "    \"price\": 10000,\n"
-                    + "    \"originalPrice\": 10000,\n"
-                    + "    \"imageUrl\": \"https://dfsf.com/1.jpg\",\n"
-                    + "    \"detailUrl\": \"https://dfsf.com/a909203923\",\n"
-                    + "    \"stock\": 5,\n"
-                    + "    \"season\": [\n"
-                    + "      \"AUTUMN\"\n"
-                    + "    ],\n"
-                    + "    \"age\": \"ADULT\",\n"
-                    + "    \"sellingStatus\": \"VALID\"\n"
-                    + "  }"
-                    + "}";
+String queueUrl = "https://sqs.ap-northeast-2.amazonaws.com/978986354907/item_test_20220408";
+String messageBody = "{\n"
+        + "  \"type\": \"ADD\",\n"
+        + "  \"apiKey\": \"\",\n"
+        + "  \"removeBackground\": false,\n"
+        + "  \"item\": {\n"
+        + "    \"name\": \"레더 벨트\",\n"
+        + "    \"productId\": \"PRODUCTID_1\",\n"
+        + "    \"category2\": \"BELT\",\n"
+        + "    \"gender\": \"MALE\",\n"
+        + "    \"brand\": \"BRAND\",\n"
+        + "    \"price\": 10000,\n"
+        + "    \"originalPrice\": 10000,\n"
+        + "    \"imageUrl\": \"https://dfsf.com/1.jpg\",\n"
+        + "    \"detailUrl\": \"https://dfsf.com/a909203923\",\n"
+        + "    \"stock\": 5,\n"
+        + "    \"season\": [\n"
+        + "      \"AUTUMN\"\n"
+        + "    ],\n"
+        + "    \"age\": \"ADULT\",\n"
+        + "    \"sellingStatus\": \"VALID\"\n"
+        + "  }"
+        + "}";
 
-            SendMessageRequest sendMsgRequest = new SendMessageRequest()
-                    .withQueueUrl(queueUrl)
-                    .withMessageBody(messageBody)
-                    .withDelaySeconds(5);
+SendMessageRequest sendMsgRequest = new SendMessageRequest()
+        .withQueueUrl(queueUrl)
+        .withMessageBody(messageBody)
+        .withDelaySeconds(5);
 
-            sqsClient.sendMessage(sendMsgRequest);
+sqsClient.sendMessage(sendMsgRequest);
 ```
 
