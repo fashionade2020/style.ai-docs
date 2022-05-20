@@ -32,7 +32,7 @@
 
 #### 예제
 ```
-{
+curl -X POST 'http://15.165.230.228:3211/api/tryon' -H 'Content-Type: application/json' -d '{
     "styleInfo": {
         "tops": {
             "gender": "female",
@@ -51,7 +51,7 @@
             "bottoms_sub_category": "pants"
         }
     }
-}
+}'
 ```
 
 
