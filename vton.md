@@ -30,61 +30,67 @@
   <tr>
     <td>modelId</td>
     <td>
-      모델 Id  #
+      모델 Id <br/>
       필수값으로 Style.AI에 등록된 모델의 Id
     </td>
   </tr>
   <tr>
     <td>TopId</td>
     <td>
-      상의 상품 ID
-      원피스 상품 ID 가 없는 경우, 상의 & 하의 상품 ID는 반드시 있어야함
+      상의 상품 ID <br/>
+      원피스 상품 ID 가 없는 경우, 상의 & 하의 상품 ID는 반드시 있어야함  <br/>
       원피스 상품 ID 가 있는 경우, 상의 & 하의 상품 ID는 없어야 함
     </td>
   </tr>
   <tr>
     <td>BottomId</td>
     <td>
-      하의 상품 ID
-      원피스 상품 ID 가 없는 경우, 상의 & 하의 상품 ID는 반드시 있어야함
+      하의 상품 ID <br/>
+      원피스 상품 ID 가 없는 경우, 상의 & 하의 상품 ID는 반드시 있어야함 <br/>
       원피스 상품 ID 가 있는 경우, 상의 & 하의 상품 ID는 없어야 함
     </td>
   </tr>
     <tr>
     <td>OuterId</td>
     <td>
-      아우터 상품 ID
+      아우터 상품 ID <br/>
       필수값이 아님
     </td>
   </tr>
     <tr>
     <td>OnePieceId</td>
     <td>
-      원피스 상품 ID
-      원피스 상품 ID 가 없는 경우, 상의 & 하의 상품 ID는 반드시 있어야함
+      원피스 상품 ID <br/>
+      원피스 상품 ID 가 없는 경우, 상의 & 하의 상품 ID는 반드시 있어야함 <br/>
       원피스 상품 ID 가 있는 경우, 상의 & 하의 상품 ID는 없어야 함
     </td>
   </tr>
     <tr>
     <td>ShoesId</td>
     <td>
-      신발 상품 ID
+      신발 상품 ID <br/>
       필수값이 아님
     </td>
   </tr>
     <tr>
     <td>EtcId</td>
     <td>
-      기타 상품 ID
+      기타 상품 ID <br/>
+      필수값이 
     </td>
   </tr>
 </table>
 
 #### 예제
 ```
-curl -X POST 'http://15.165.230.228:3211/api/tryon' -H 'Content-Type: application/json' -d '{
-      "tops": {
-      },
+curl -X POST 'https://styleapi.fashionade.ai/api/vton' -H 'Content-Type: application/json' -d '{
+      "modelId": "",
+      "topId": "",
+      "bottomId": "",
+      "outerId": "",
+      "onePieceId": "",
+      "shoesId": "",
+      "etcId": ""      
 }'
 ```
 
