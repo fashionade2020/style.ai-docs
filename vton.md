@@ -30,7 +30,7 @@
   <tr>
     <td>modelId</td>
     <td>
-      모델 Id  
+      모델 Id  #
       필수값으로 Style.AI에 등록된 모델의 Id
     </td>
   </tr>
