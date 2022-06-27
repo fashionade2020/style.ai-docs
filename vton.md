@@ -76,7 +76,7 @@
     <td>EtcId</td>
     <td>
       기타 상품 ID <br/>
-      필수값이 
+      필수값이 아님
     </td>
   </tr>
 </table>
