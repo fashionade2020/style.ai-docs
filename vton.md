@@ -65,20 +65,6 @@
       원피스 상품 ID 가 있는 경우, 상의 & 하의 상품 ID는 없어야 함
     </td>
   </tr>
-    <tr>
-    <td>ShoesId</td>
-    <td>
-      신발 상품 ID <br/>
-      필수값이 아님
-    </td>
-  </tr>
-    <tr>
-    <td>EtcId</td>
-    <td>
-      기타 상품 ID <br/>
-      필수값이 아님
-    </td>
-  </tr>
 </table>
 
 #### 예제
@@ -88,9 +74,7 @@ curl -X POST 'https://styleapi.fashionade.ai/api/vton' -H 'Content-Type: applica
       "topId": "",
       "bottomId": "",
       "outerId": "",
-      "onePieceId": "",
-      "shoesId": "",
-      "etcId": ""      
+      "onePieceId": ""
 }'
 ```
 
@@ -113,7 +97,7 @@ curl -X POST 'https://styleapi.fashionade.ai/api/vton' -H 'Content-Type: applica
     <td>ex) Invalid image url, please ensure the file is of correct size and format</td>
   </tr>
   <tr>
-    <td>Data</td>
+    <td>result</td>
     <td>모델이미지를 URL 포멧으로 제공 </td>
     <td></td>
   </tr>
