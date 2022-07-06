@@ -87,12 +87,12 @@ curl -X POST 'https://styleapi.fashionade.ai/api/vton' -H 'Content-Type: applica
     <th>세부내용</th>
   </tr>
   <tr>
-    <td>Status</td>
+    <td>status</td>
     <td>API 요청 성공여부</td>
     <td>Success or failure</td>
   </tr>
   <tr>
-    <td>Message</td>
+    <td>message</td>
     <td>Status가 Failure인 경우 상세 에러 메세지</td>
     <td>ex) Invalid image url, please ensure the file is of correct size and format</td>
   </tr>
