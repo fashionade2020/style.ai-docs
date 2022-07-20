@@ -17,6 +17,7 @@ curl -X POST https://logs.fashionade.ai/logs 로 요청을 보내는 형태이�
 }
 ```
 ### Page view 
+추천 콘텐츠가 노출되는 모든 화면에서 수집하는 데이터입니다.
 
 Page view 예시)
 
@@ -41,6 +42,8 @@ curl -X POST 'https://logs.fashionade.ai/logs' \
 
 
 ### 상품 클릭
+추천 콘텐츠에서 상품을 클릭했을 때 수집하는 데이터 입니다.
+
 상품 클릭 추가 데이터
 
 ```
