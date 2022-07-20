@@ -4,26 +4,50 @@
 curl -X POST https://logs.fashionade.ai/logs 로 요청을 보내는 형태이며 공통적으로 body 에 들어가는 데이터는 다음과 같습니다.
 
 ```
-"type": "click", // 로그 타입 (click, addCart, purchase)
-"apiKey": "XXXXXXX", // 이전에 전달드린 데상트 apiKey
+"type": "click", // 로그 타입 (init, click, addCart, purchase)
+"apiKey": "XXXXXXX", // apiKey
 "uuid": "/^[a-zA-Z0-9]+$/", // 랜덤 생성 unique id
 "userAgent": "Mozilla", // user agent
 "lang": "ko-Kr", // 브라우저 언어
-"page": "https://www.sample.com/page.html", 페이지 url"referrer": "https://www.sample.com/refer", 링크를 통해 현재 페이지로 이동 시킨, 전 페이지의 URI 정보
+"page": "https://www.sample.com/page.html" // 페이지 url
+"referrer": "https://www.sample.com/refer" // 링크를 통해 현재 페이지로 이동 시킨, 전 페이지의 URI 정보
 "deviceTime": "2020-09-09 12:00:00.000" // GMT+9
 "ext": {
   "userId": "userId" // 유저아이디
 }
 ```
+### Page view 
 
-### 상품 상세
-상품 상세 추가 데이터
+Page view 예시)
+
+```
+curl -X POST 'https://logs.fashionade.ai/logs' \
+-d '{
+  "sdk": "outfits",
+  "type": "init",
+  "apiKey": "qEPCePiBjV2Clk0rEwuSwEq6dddrici9YA2yRaTDa1s2d3f4q5w6e8r1h5b1b6b",
+  "uuid": "user uuid",
+  "userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
+  "lang":"ko-kr",
+  "page":"https://www.fashionade.ai/item/64567",
+  "referrer":"https://www.fashionade.ai/item/64568",
+  "deviceTime":"2021-05-06T02:39:36.096Z",
+  "ext": {
+    "userId": "20211222test",
+   },
+}'
+```
+
+
+
+### 상품 클릭
+상품 클릭 추가 데이터
 
 ```
 "recommendItemId": "123123" // 추천 상품 Id 
 ```
 
-상품 상세 예시)
+상품 클릭 예시)
 
 ```
 curl -X POST 'https://logs.fashionade.ai/logs' \
