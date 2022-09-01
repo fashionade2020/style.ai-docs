@@ -30,6 +30,7 @@
 - stock: 재고
 - season : [SPRING, SUMMER, AUTUMN, WINTER] (복수선택 가능)
 - age : ADULT, JUNIOR, CHILD
+- sellingStatus : NOT_DISPLAY, SOLD_OUT, VALID (전시종료, 판매종료, 유효함)
 
 
 #### 예제
@@ -53,7 +54,8 @@
     "detailUrl": "https://dfsf.com/a909203923",
     "stock": 10,
     "season": ["WINTER"],
-    "age": "ADULT"
+    "age": "ADULT",
+    "sellingStatus": "VALID"
   }
 }
 
